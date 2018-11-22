@@ -12,7 +12,7 @@ scipy
 sklearn
 
 How to run the code:
-There are two Jupyter notebooks in this repo, each of them corresponds to one of my submissions selected for the private leaderboard. Just run the notebook cell by cell from top to bottom to generate the predictions as a csv file.
+There are two Jupyter notebooks in this repo, each of them corresponds to one of my submissions selected for the private leaderboard. Just put the notebook in the same directory as test.csv and train.csv and then run it cell by cell from top to bottom to generate the predictions as a csv file.
 
 Differences between the two notebooks:
 The two notebooks are identical except for one single line: method2 dropped an outlier in cell 3.
