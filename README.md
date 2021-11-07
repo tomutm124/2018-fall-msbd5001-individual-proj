@@ -10,7 +10,7 @@ My solution is rather short. I partitioned the dataset by 2 ordinal features and
 I believe this solution demonstrates the importance of understanding the data. I was told that a lot of students went straight to multivariate regression models using all parameters given in the dataset without trying to understand how each parameter is related to the target (model training time).
 
 
-More details: (course requirements)
+## More details: (required by the course instructor)
 
 Programming language:
 Python 3.6
@@ -32,7 +32,7 @@ The two notebooks are identical except for one single line: method2 dropped an o
 Brief description of the method used:
 1. Some simple data preprocessing (e.g. change n_classes=2 to n_classes=1 and change n_jobs=-1 to n_jobs=16)
 
-2. Feature enginnering to get a feature called "e_factor":
+2. Feature enginnering to get a feature called "e_factor": (about the ceiling function, 3 jobs running on 2 cores take similar time as 4 jobs on 2 cores)
 
 all_data['e_factor'] = (np.ceil(all_data['n_classes'] / all_data['n_jobs'])) * all_data['max_iter'] * all_data['n_features'] * all_data['n_samples']
 
