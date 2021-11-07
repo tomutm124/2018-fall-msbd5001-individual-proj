@@ -3,7 +3,7 @@
 This is my solution for an in-class prediction competition for an introductory data science course that is part of my master's degree:
 https://www.kaggle.com/c/msbd5001-fall2018
 
-I got first place among more than 100 students. The goal of the competition was to predict the training time of a model on a specific machine given the model's training parameters and the parameters used to generate the training data (refer to the link above for details). We were given a training dataset that consists of rows of parameters and model training time, and were asked to predict the model training time for each row in a test dataset.
+I got the first place among more than 100 students. The goal of the competition was to predict the training time of a model on a specific machine given the model's training parameters and the parameters used to generate the training data (refer to the link above for details). We were given a training dataset that consists of rows of parameters and model training time, and were asked to predict the model training time for each row in a test dataset.
 
 My solution is rather short. I partitioned the dataset by 2 ordinal features and then created a single feature that was expected to be linearly proportional to the training time in each partition. The feature is the "e_factor" below. Then I fit a linear line of (e_factor vs target) for each partition of data and used the fitted line to make predictions on the test dataset.
 
